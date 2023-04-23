@@ -15,19 +15,19 @@
 
 
 ### STEP 1 Install git
-    sudo apt-get install git
+    sudo apt-get install git -y
 
 ### STEP 2 install python-dev
 
-    sudo apt-get install python3-dev
+    sudo apt-get install python3-dev -y
 
 ### STEP 3 Install setuptools and pip (Python's Package Manager).
 
-    sudo apt-get install python3-setuptools python3-pip
+    sudo apt-get install python3-setuptools python3-pip -y
 
 ### STEP 4 Install virtualenv
     
-    sudo apt-get install virtualenv
+    sudo apt-get install virtualenv -y
     
   CHECK PYTHON VERSION 
   
@@ -39,18 +39,18 @@
 
   IF VERSION IS 3.10.X RUN
   
-     sudo apt install python3.10-venv
+     sudo apt install python3.10-venv -y
 
 ### STEP 5 Install MariaDB
 
-    sudo apt-get install software-properties-common
-    sudo apt install mariadb-server
+    sudo apt-get install software-properties-common -y
+    sudo apt install mariadb-server -y
     sudo mysql_secure_installation
     
     
 ### STEP 6  MySQL database development files
 
-    sudo apt-get install libmysqlclient-dev
+    sudo apt-get install libmysqlclient-dev -y
 
 ### STEP 7 Edit the mariadb configuration ( unicode character encoding )
 
@@ -88,7 +88,7 @@ Now press (Ctrl-X) to exit
 
 ### STEP 8 install Redis
     
-    sudo apt-get install redis-server
+    sudo apt-get install redis-server -y
 
 ### STEP 9 install Node.js 14.X package
 
@@ -99,13 +99,13 @@ Now press (Ctrl-X) to exit
 
 ### STEP 10  install Yarn
 
-    sudo apt-get install npm
+    sudo apt-get install npm -y
 
     sudo npm install -g yarn
 
 ### STEP 11 install wkhtmltopdf
 
-    sudo apt-get install xvfb libfontconfig wkhtmltopdf
+    sudo apt-get install xvfb libfontconfig wkhtmltopdf -y
     
 
 ### STEP 12 install frappe-bench
