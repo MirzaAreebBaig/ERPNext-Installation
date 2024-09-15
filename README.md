@@ -125,7 +125,7 @@ Now press (Ctrl-X) to exit
     
 ### STEP 14 create a site in frappe bench 
     
-    bench new-site dcode.com
+    bench new-site site.com
     
     bench use site.com
 
