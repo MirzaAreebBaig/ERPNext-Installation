@@ -117,6 +117,8 @@ Now press (Ctrl-X) to exit
 ### STEP 13 initilise the frappe bench & install frappe latest version 
 
     bench init frappe-bench 
+    ###OR
+    bench init --frappe-branch version-15 frappe-bench
     
     cd frappe-bench/
     bench start
@@ -125,14 +127,14 @@ Now press (Ctrl-X) to exit
     
     bench new-site dcode.com
     
-    bench use dcode.com
+    bench use site.com
 
 ### STEP 15 install ERPNext latest version in bench & site
 
-    bench get-app erpnext --branch version-13
+    bench get-app --branch version-15 erpnext
     ###OR
-    bench get-app https://github.com/frappe/erpnext --branch version-13
+    bench get-app https://github.com/frappe/erpnext --branch version-15
 
-    bench --site dcode.com install-app erpnext
+    bench --site site.com install-app erpnext
     
     bench start
