@@ -106,15 +106,19 @@ Now press (Ctrl-X) to exit
 ### STEP 11 install wkhtmltopdf
 
     sudo apt-get install xvfb libfontconfig wkhtmltopdf -y
+
+### STEP 12 install pkg-config (if Frappe 16)
+
+    sudo apt install pkg-config -y
     
 
-### STEP 12 install frappe-bench
+### STEP 13 install frappe-bench
 
     sudo -H pip3 install frappe-bench
     
     bench --version
     
-### STEP 13 initilise the frappe bench & install frappe latest version 
+### STEP 14 initilise the frappe bench & install frappe latest version 
 
     bench init frappe-bench 
     ###OR
@@ -123,13 +127,13 @@ Now press (Ctrl-X) to exit
     cd frappe-bench/
     bench start
     
-### STEP 14 create a site in frappe bench 
+### STEP 15 create a site in frappe bench 
     
     bench new-site site.com
     
     bench use site.com
 
-### STEP 15 install ERPNext latest version in bench & site
+### STEP 16 install ERPNext latest version in bench & site
 
     bench get-app --branch version-15 erpnext
     ###OR
