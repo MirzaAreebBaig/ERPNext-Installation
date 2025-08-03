@@ -142,3 +142,20 @@ Now press (Ctrl-X) to exit
     bench --site site.com install-app erpnext
     
     bench start
+
+### Specific Apps Installation
+
+    # Frappe 15.72.5 - Pharma
+      bench get-app frappe --branch v15.72.5 https://github.com/frappe/frappe
+
+      # ERPNext 15.61.1 - BronUti
+      bench get-app erpnext --branch v15.61.1 https://github.com/frappe/erpnext
+
+      # Frappe 15.68.1 - BronUti
+      bench get-app frappe --branch v15.68.1 https://github.com/frappe/frappe
+
+      # CRM 1.41.1 - BronUti
+      bench get-app crm --branch v1.41.1 https://github.com/frappe/crm
+
+
+
