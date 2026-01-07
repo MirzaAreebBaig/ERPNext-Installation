@@ -21,6 +21,21 @@
 
     sudo apt-get install python3-dev -y
 
+### for Python 3.10.x
+    sudo apt-get install software-properties-common -y
+    sudo add-apt-repository ppa:deadsnakes/ppa -y
+    sudo apt-get update
+### install Python 3.10
+    sudo apt-get install python3.10 python3.10-dev python3.10-venv -y
+### install pip for Python 3.10
+    sudo apt-get install python3.10-distutils -y
+    wget https://bootstrap.pypa.io/get-pip.py
+    sudo python3.10 get-pip.py
+    rm get-pip.py
+### After installation, verify it 
+    python3.10 --version
+    python3.10 -m pip --version
+
 ### STEP 3 Install setuptools and pip (Python's Package Manager).
 
     sudo apt-get install python3-setuptools python3-pip -y
@@ -157,5 +172,22 @@ Now press (Ctrl-X) to exit
       # CRM 1.41.1 - BronUti
       bench get-app crm --branch v1.41.1 https://github.com/frappe/crm
 
+### Grand SUDO access to user
+     sudo usermod -aG sudo username
+
+### Enable SSL
+### Step 1: Enable Production Mode
+     sudo bench setup production [your-user]
+### Step 2: Add Your Site to Bench
+     bench setup add-domain yourdomain.com --site [site-name]
+### Step 3: Set Up SSL with Let's Encrypt
+### Install certbot if not already installed
+    sudo apt install certbot python3-certbot-nginx
+
+### Set up SSL for your site
+    sudo bench setup lets-encrypt [site-name]
+### Step 4: Verify and Restart
+    sudo supervisorctl restart all
+    sudo service nginx reload
 
 
