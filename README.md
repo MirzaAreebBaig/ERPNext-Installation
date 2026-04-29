@@ -190,4 +190,7 @@ Now press (Ctrl-X) to exit
     sudo supervisorctl restart all
     sudo service nginx reload
 
+### CSS Issue
+    sudo chmod 755 /home/username
+
 
