@@ -176,11 +176,13 @@ Now press (Ctrl-X) to exit
      sudo usermod -aG sudo username
 
 ### Enable SSL
-### Step 1: Enable Production Mode
+### Step 1: Enable Multitenancy 
+      bench config dns_multitenant on
+### Step 2: Enable Production Mode
      sudo bench setup production [your-user]
-### Step 2: Add Your Site to Bench
+### Step 3: Add Your Site to Bench
      bench setup add-domain yourdomain.com --site [site-name]
-### Step 3: Set Up SSL with Let's Encrypt
+### Step 4: Set Up SSL with Let's Encrypt
 ### Install certbot if not already installed
     sudo apt install certbot python3-certbot-nginx
 
